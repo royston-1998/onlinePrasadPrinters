@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Online@PrasadPrinters</title>
+  <link rel="stylesheet" href="css/homeCss.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body class="body">
+
+  <div class="header-section">
+
+    <nav id="menuNavbar" class="navbar navbar-up navbar-dark bg-dark navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h4 class="product-brand">Prasad Printers</h4>
+          <h6 class="product-tagline">THE MANIFEST INNOVATION OF QUALITY</h6>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse add-space-to-menuoption" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link style-menu" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link style-menu" href="#">My Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link style-menu" href="#">My Points</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link style-menu" href="#">My Order</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right login-option">
+            <li class="nav-item">
+              <a href="#" class="nav-link" >
+                <button type="button" class="btn btn-outline-light" name="button" data-toggle="modal" data-target="#signupModal">
+                  Signup
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <button type="button" class="btn btn-outline-light" name="button" data-toggle="modal" data-target="#loginModal">
+                  Login
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="navbar-down navbar-light nav-up-right">
+      <div class="container ">
+        <i class="far fa-heart fa-lg" aria-hidden="true"></i>&nbsp&nbsp&nbsp
+        <i class="fas fa-dolly fa-lg"></i>&nbsp&nbsp&nbsp
+
+        <input type="text" class="search-bar" name="" value="" placeholder="Search...">
+        <i class="fas fa-search" type="button" aria-hidden="true"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Signup</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <p><label for="">Name:</label>
+            <input type="text" class="form-control" name="" value=""> </p>
+          <p><label for="">Mobile Number:</label>
+            <input type="text" class="form-control" name="" value=""> </p>
+          <p><label for="">OTP:</label>
+            <input type="text" class="form-control" name="" value="">
+            (OTP is sent to the registered mobile number)
+          </p>
+          <p><button type="button" class="btn btn-primary form-control" name="button">Signup</button></p>
+        </div>
+        <div class="modal-footer">
+          //comments
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Signup</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><label for="">Mobile Number:</label>
+            <input type="text" class="form-control" name="" value=""> </p>
+          <p><label for="">OTP:</label>
+            <input type="text" class="form-control" name="" value="">
+            (OTP is sent to the registered mobile number)
+          </p>
+          <p><button type="button" class="btn btn-primary form-control" name="button">Login</button></p>
+        </div>
+        <div class="modal-footer">
+          //comments
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="content"> </div>
+
+
+  <script>
+    document.getElementById('content').innerHTML = url('onlinePrasadPrinters/mainCategory.html');
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/93de56ccd5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+
+  <!-- END OF JAVASCRIPT -->
+  <script>
+    $(document).ready(function() {
+      // $('.abouts').click(function(){
+      $('#content').load('mainCategory.html');
+      // })
+    });
+  </script>
+
+</body>
+
+</html>

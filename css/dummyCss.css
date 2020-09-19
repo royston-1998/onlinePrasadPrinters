@@ -1,0 +1,16 @@
+.navbar-up{
+  border-bottom: 4px solid #60B078;
+  color: #fff;
+  padding: 20px 2px;
+}
+.nav-up-right{
+  text-align: right;
+}
+.style-menu:hover{
+  color: #60B078;
+  border-bottom: 1px solid #60B078;
+}
+.navbar-down{
+  /* border-bottom: 4px solid #60B078; */
+  background-color: #f8f8f8;
+}
